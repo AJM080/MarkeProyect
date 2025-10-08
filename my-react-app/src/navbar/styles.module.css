@@ -1,0 +1,26 @@
+.nav-bar {
+    width: max-content;
+}
+
+
+
+.nav-item {
+    position: relative;
+    width: max-content;
+}
+
+
+.link-text {
+    font-size: 1rem;
+    padding: 12px 12px;
+    margin-left: 1rem;
+    transition: color 0.4s ease;
+}
+.link-text:hover{
+    color:  var(--detail-pry);
+}
+
+.log-regs {
+    grid-area: log-regs;
+}
+

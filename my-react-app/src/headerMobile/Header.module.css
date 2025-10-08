@@ -1,0 +1,119 @@
+.header-nav {
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--bg-primary);
+    border: 0;
+}
+
+.box-lay-header-mobile{
+    display: grid;
+    padding: .5rem;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr minmax(250px, 3fr) 1fr;
+    grid-template-rows: 60px max-content;
+    grid-template-areas: 'logo input-search toggle-menu'
+                         'menu-box menu-box menu-box';                     
+}
+.wrapper-logo {
+    grid-area: logo;
+    height: 40px;
+    width: 40px;
+}
+.logo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.wrapper-cont{
+    display: flex;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+}
+.search-input{
+    grid-area: input-search;
+}
+
+.box-search {
+    --pading: 6px;
+    width: 600px;
+    display: flex;
+    justify-items: center;
+    padding: var(--pading);
+    border-radius: 28px;
+    background-color: #f6f6f6;
+}
+
+.search-input {
+    height: 20px;
+    width: 100%;
+    font-size: 10px;
+    font-family: 'Franklin Gothic Medium', sans-serif;
+    color: #333333;
+    margin-left: var(--pading);
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+.search-input::placeholder,
+.search-icon {
+    font-size: .9rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.butt-submit {
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    border: none;
+}
+
+.menu-toggles{
+    grid-area: toggle-menu;
+}
+.menu-conteiner{
+    display: none;
+    grid-area: menu-box;
+}
+
+.login-regis {
+    display: block;
+    width: 100%;
+    padding: var(--padding-primary);
+    color: var(--text-secondary);
+    background-color: var(--bg-primary);
+}
+
+.description-log {
+    display: flex;
+    gap: 20px;
+}
+
+.description-log p {
+    align-self: center
+}
+
+.butt-logn-regs a {
+    text-decoration: none;
+    width: 200px;
+    text-align: center;
+    color: var(--text-primary);
+    padding: var(--padding-primary);
+    background-color: var(--bg-tertiary);
+    margin: 3px;
+    box-shadow: var(--box-shadow-secondary);
+}
+
+.butt-logn-regs a:last-child {
+    background-color: var(--text-secondary);
+    color: var(--bg-tertiary);
+    border: 2px solid var(--bg-tertiary);
+}
+
+
+.close-menu-icon{
+    display: none;
+}

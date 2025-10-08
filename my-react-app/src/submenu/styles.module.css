@@ -1,0 +1,22 @@
+.dropdown{
+    position: absolute;
+    top: 48px;
+    width: 200px;
+    transform: translateX(45%);
+    background-color: var(--bg-secondary);
+    border: var(--border);
+    border-radius: var(--border-radius-pry);
+    padding: 1rem;
+    overflow: hidden;
+}
+.drop-item{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-radius: var(--border-radius-pry);
+    transition: background var(--speed);
+    padding: 0.5rem;
+}
+.drop-item:hover{
+    background-color: #525357;
+}
