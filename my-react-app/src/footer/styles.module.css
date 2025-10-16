@@ -4,7 +4,8 @@
     margin: auto;
 }
 .row{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     padding: 12px 15px;
 }
 .footer{
@@ -13,7 +14,6 @@
     padding: 50px 0;
 }
 .footer-col{
-    width: 25%;
     padding: 0 15px;
 }
 .footer-col ul{
@@ -73,13 +73,19 @@
 }
 
 @media(max-width: 767px){
+    .row{
+        grid-template-columns: 1fr 1fr;
+
+    }
     .footer-col{
-        width: 50%;
-        margin-bottom:30px;
+        margin-bottom: 20px;
     }
 }
 @media(max-width: 574px){
+    .row{
+        grid-template-columns: 1fr;
+    }
     .footer-col{
-        width: 100%;
+        margin-bottom: 20px;
     }
 }

@@ -23,4 +23,23 @@
 .log-regs {
     grid-area: log-regs;
 }
-
+@media(max-width: 1540px){
+    .link-text{
+        font-size: .85rem;
+    }
+}
+@media(max-width: 1240px){
+    .link-text{
+        font-size: .75rem;
+    }
+}
+@media(max-width: 1140px){
+    .link-text{
+        font-size: .65rem;
+    }
+}
+@media(max-width: 1050px){
+    .link-text{
+        font-size: .55rem;
+    }
+}
