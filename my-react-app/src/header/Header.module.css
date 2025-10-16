@@ -11,7 +11,7 @@
     padding: .5rem;
     justify-content: center;
     align-items: center;
-    grid-template-columns: 1fr minmax(250px, 3fr) 1fr;
+    grid-template-columns: minmax(100px, 1fr) minmax(200px, 2fr) minmax(200px, 1fr);
     grid-template-rows: 60px 50px;
     grid-template-areas:
         'logo inp-search menu-prom'
@@ -24,12 +24,12 @@
     grid-area: logo;
 }
 
-.wrapper-img {
-    height: 60px;
-    width: 60px;
+.wrapper-logo {
+    height: 50px;
+    width: 50px;
 }
 
-.wrapper-img img,
+.wrapper-logo img,
 .butt-submit img {
     width: 100%;
     height: 100%;

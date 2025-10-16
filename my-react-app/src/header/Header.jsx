@@ -15,7 +15,7 @@ function Header(){
     return(
         <header className={styles['header-nav']}>
             <div className={styles['box-lay-header']}>
-                <div className={`${styles['wrapper-img']} ${styles['logo']}`}><img src={logo} alt=""/></div>
+                <div className={`${styles['wrapper-logo']} ${styles['logo']}`}><img src={logo} alt=""/></div>
                 <div className={styles['wrapper-cont']}>
                     <SearchInput/>
                 </div>

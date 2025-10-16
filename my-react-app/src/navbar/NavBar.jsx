@@ -1,5 +1,5 @@
 import styles from './styles.module.css';
-import React, { useState, useEffect } from 'react';
+import React, { useState} from 'react';
 import { FaCartArrowDown, FaAngleDown } from 'react-icons/fa';
 import SubMenu from '../submenu/SubMenu.jsx'
 
@@ -7,26 +7,7 @@ import SubMenu from '../submenu/SubMenu.jsx'
 function NavItems({ items = [] }) {
     const [open, setOpen] = useState(false);
     const liItems = [];
-    const linkText = document.querySelectorAll('.link-text');
 
-    console.log(linkText)
-    useEffect(() => {
-        window.addEventListener("resize", handleResize);
-        console.log('pasa')
-
-        return () => {
-            window.removeEventListener("resize", handleResize);
-        }
-
-    }, []);
-
-    function handleResize() {
-        if (window.innerWidth < 1540) {
-            linkText.forEach(t => {
-                t.style.fontSize = ".7rem";
-            });
-        }
-    }
     if (items.length > 0) {
         for (let i = 0; i < items.length; i++) {
             liItems.push(<li key={i} className={styles['nav-item']}
