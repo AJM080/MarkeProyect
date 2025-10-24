@@ -22,8 +22,7 @@
 }
 
 body {
-
-    overflow-x: clip;
+    overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -37,10 +36,9 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
     background: #6649b7;
 }
-.wrapper-conteiner{
-        min-height: 100dvh;
+.lay-page{
     display: grid;
-    grid-template-rows: auto 1fr auto ;
+    grid-template-rows: max-content minmax(1fr, auto) auto ;
 }
 ul{
     list-style: none;

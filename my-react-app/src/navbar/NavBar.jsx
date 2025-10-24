@@ -1,7 +1,6 @@
 import styles from './styles.module.css';
 import React, { useState} from 'react';
-import { FaCartArrowDown, FaAngleDown } from 'react-icons/fa';
-import SubMenu from '../submenu/SubMenu.jsx'
+import SubMenu from '../submenu/SubMenu.jsx';
 
 
 function NavItems({ items = [] }) {
@@ -11,7 +10,7 @@ function NavItems({ items = [] }) {
     if (items.length > 0) {
         for (let i = 0; i < items.length; i++) {
             liItems.push(<li key={i} className={styles['nav-item']}
-                onClick={() => setOpen(!open)}>
+                 onClick={items[i].itemName.toLowerCase() === 'categoria' && (() => setOpen(!open))}>
                 <a href='#' className={styles['nav-link']}>
                     <span className={styles['link-text']}>
                         {items[i].itemName}{items[i].icon}
