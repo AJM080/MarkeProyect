@@ -1,15 +1,10 @@
 .nav-bar {
     width: max-content;
 }
-
-
-
 .nav-item {
     position: relative;
     width: max-content;
 }
-
-
 .link-text {
     font-size: 1rem;
     padding: 12px 12px;

@@ -1,0 +1,81 @@
+
+.menu {
+    border: none;
+    background-color: var(--text-secondary);
+}
+
+.login-regis {
+    display: block;
+    width: 100%;
+    padding: var(--padding-primary);
+    color: var(--text-secondary);
+    background-color: var(--bg-primary);
+}
+
+.description-log {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.icon-descript {
+    font-size: 2rem;
+}
+.description-text{
+    color: var(--text-secondary);
+    padding: var(--padding-primary);
+
+}
+
+
+.butt-logn-regs a {
+    text-decoration: none;
+    width: 200px;
+    text-align: center;
+    color: var(--text-primary);
+    padding: var(--padding-primary);
+    background-color: var(--bg-tertiary);
+    margin: 3px;
+    box-shadow: var(--box-shadow-secondary);
+}
+
+.butt-logn-regs a:last-child {
+    background-color: var(--text-secondary);
+    color: var(--bg-tertiary);
+    border: 2px solid var(--bg-tertiary);
+}
+.wrapper-cont{
+    display: flex;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+}
+.nav-menu {
+    display: block;
+    width: 100%;
+    height: max-content;
+    text-align: center;
+    justify-content: center;
+}
+.nav-menu ul{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.nav-menu li:hover {
+    background-color:var(--bg-tertiary);
+}
+.nav-menu li:hover .link-text{
+    color: var(--text-secondary);
+}
+.nav-menu .link-text {
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: var(--bg-secondary);
+    margin: 2px;
+}
+.icon-item-menu{
+    font-size: 1.3rem;
+    color: var(--text-secondary);
+}

@@ -51,13 +51,11 @@ function  Footer(){
 
     return(
         <footer className={styles.footer}>
-            <div className={styles.container}>
-                <div className={styles.row}>
-                    <FooterCol footerName={'company'} footerItems={companyItems}/>
-                    <FooterCol footerName={'get Help'} footerItems={getHelpItems}/>
-                    <FooterCol footerName={'online Shop'} footerItems={onlineShopItems}/>
-                    <FooterCol footerName={'follow us'}  isSocial={true} icons={icons}/>
-                </div>
+            <div className={styles['lay-footer']}>
+                <FooterCol footerName={'company'} footerItems={companyItems}/>
+                <FooterCol footerName={'get Help'} footerItems={getHelpItems}/>
+                <FooterCol footerName={'online Shop'} footerItems={onlineShopItems}/>
+                <FooterCol footerName={'follow us'}  isSocial={true} icons={icons}/>
             </div>
         </footer>
     )

@@ -1,17 +1,15 @@
 
-.container{
-    max-width: 1178px;
-    margin: auto;
-}
-.row{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding: 12px 15px;
-}
 .footer{
-
+    margin-top: 100vh;
     background-color: var(--bg-primary);
     padding: 50px 0;
+}
+
+.lay-footer{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(100px, 1fr));
+    place-items: center;
+    max-height: 400px;
 }
 .footer-col{
     padding: 0 15px;
@@ -39,7 +37,6 @@
 }
 .footer ul li{
     display: flex;
-    align-items: left;
     margin-bottom: 10px;
 }
 .footer ul li a{
