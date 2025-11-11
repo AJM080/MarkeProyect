@@ -1,7 +1,5 @@
 .header-nav {
-    height: 120px;
-    display: flex;
-    justify-content: center;
+    height: max-content;
     background-color: var(--bg-primary);
     border: 0;
 }

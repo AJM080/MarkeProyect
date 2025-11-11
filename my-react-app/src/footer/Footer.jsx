@@ -33,7 +33,7 @@ function SocialMedia({icons}){
 
     if(icons.length > 0){
         for (let i = 0; i < icons.length; i++) {
-            aItems.push(<a href=''>{icons[i]}</a>)
+            aItems.push(<a key={i} href=''>{icons[i]}</a>)
         }
     }
 

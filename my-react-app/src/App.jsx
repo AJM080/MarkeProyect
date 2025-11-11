@@ -1,16 +1,19 @@
 import Footer from './footer/Footer.jsx'
 import Header from './Header/Header.jsx';
+import Carusel from './Carusel/Carusel.jsx';
 
 
 function App() {
 
+
+
   return(
     <>
-    <div className="lay-page">
       <Header/>
-      <main><h1></h1></main>
+      <main>
+          <Carusel />
+      </main>
       <Footer/>
-    </div>
     </>
   );
 }

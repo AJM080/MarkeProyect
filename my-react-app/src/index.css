@@ -21,10 +21,6 @@
     box-sizing: border-box;
 }
 
-body {
-    overflow-x: hidden;
-}
-
 body::-webkit-scrollbar {
     width: 0.7rem;
 }
@@ -36,10 +32,7 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
     background: #6649b7;
 }
-.lay-page{
-    display: grid;
-    grid-template-rows: max-content minmax(1fr, auto) auto ;
-}
+
 ul{
     list-style: none;
     display: flex;
