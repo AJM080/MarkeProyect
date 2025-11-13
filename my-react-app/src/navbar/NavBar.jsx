@@ -10,7 +10,7 @@ function NavItems({ items = [] }) {
     if (items.length > 0) {
         for (let i = 0; i < items.length; i++) {
             liItems.push(<li key={i} className={styles['nav-item']}
-                 onClick={items[i].itemName.toLowerCase() === 'categoria' && (() => setOpen(!open))}>
+                 onClick={items[i].itemName.toLowerCase() === 'categoria' ? (() => setOpen(!open)) : undefined}>
                 <a href='#' className={styles['nav-link']}>
                     <span className={styles['link-text']}>
                         {items[i].itemName}{items[i].icon}
